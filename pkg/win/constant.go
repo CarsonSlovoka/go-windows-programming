@@ -127,3 +127,9 @@ const (
 const (
 	WTS_CURRENT_SERVER_HANDLE = 0
 )
+
+// https://github.com/pilight/windows-cli/blob/master/include/shellapi.h
+const (
+	NOTIFYICON_VERSION   = 3
+	NOTIFYICON_VERSION_4 = 4
+)

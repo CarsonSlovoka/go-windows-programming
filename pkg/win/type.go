@@ -19,11 +19,6 @@ type MSG struct {
 	LPrivate uint32
 }
 
-// value https://github.com/pilight/windows-cli/blob/master/include/shellapi.h
-const (
-	NOTIFYICON_VERSION_4 = 4
-)
-
 type NOTIFYICONDATA struct {
 	CbSize           uint32
 	HWnd             uintptr
