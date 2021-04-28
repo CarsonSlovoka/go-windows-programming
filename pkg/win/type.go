@@ -19,6 +19,11 @@ type MSG struct {
 	LPrivate uint32
 }
 
+// value https://github.com/pilight/windows-cli/blob/master/include/shellapi.h
+const (
+	NOTIFYICON_VERSION_4 = 4
+)
+
 type NOTIFYICONDATA struct {
 	CbSize           uint32
 	HWnd             uintptr
@@ -30,7 +35,7 @@ type NOTIFYICONDATA struct {
 	DwState          uint32
 	DwStateMask      uint32
 	SzInfo           [256]uint16
-	UVersion         uint32
+	UVersion         uint32 // https://docs.microsoft.com/en-us/windows/win32/api/shellapi/nf-shellapi-shell_notifyicona#remarks
 	SzInfoTitle      [64]uint16
 	DwInfoFlags      uint32
 	GuidItem         GUID
